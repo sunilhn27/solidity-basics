@@ -6,6 +6,56 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "addr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "age",
 				"outputs": [
@@ -13,6 +63,38 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "interger",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -45,13 +127,26 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newValue",
+						"type": "uint256"
+					}
+				],
+				"name": "setValue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "value",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "int256",
 						"name": "",
-						"type": "uint256"
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -86,11 +181,11 @@
 	},
 	"sources": {
 		"contracts/Basics/DataType.sol": {
-			"keccak256": "0xf8533c017aa91c5be10499c4c879c10b347f27aa21788201dec18a906271406f",
+			"keccak256": "0xc1c021b461f4eadd8485869efe1d74993cce1d56020978c6efde2ecaacaac0ab",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5a4d7a7eb6f7460d06183bd7b280d45a746b0e4a7a29bb0ed6d97fbd20d58fb8",
-				"dweb:/ipfs/QmU1U7gvfKoi7n8D835mGZozVyBnkqic2eSXDfdJb26oi8"
+				"bzz-raw://a778bdb64c82860d239e2cd16791b5f9e883122199572054faf18408b08616f1",
+				"dweb:/ipfs/QmY7GC1wHJxgzmEPCykbdJBp7Az5UFM5ABfTFNfj3bPzDr"
 			]
 		}
 	},
