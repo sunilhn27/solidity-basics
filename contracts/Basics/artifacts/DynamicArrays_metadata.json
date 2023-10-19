@@ -34,7 +34,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -66,11 +66,11 @@
 	},
 	"sources": {
 		"contracts/Basics/DynamicArrays.sol": {
-			"keccak256": "0x50c177a737fa2ef3f28fba650cee1754d2ab1c8aec3ac2610e405c8dd4380fce",
+			"keccak256": "0x0243236c94db72277c9701d245bc253b5e3c6098d8aaacc3e0217ba3ac42f373",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f5b897987550aa4edc6aff8631db82b140207c480952c7819b61bb76a02340c6",
-				"dweb:/ipfs/Qmaqxd91wV5R1usYtYb4fR5Fxzr8SKtnGhdXaskH4Y7spZ"
+				"bzz-raw://4892b8b609718d0d2a0ec238b75d7db95d74758b0c5b4ce5cb731dc0dafc377e",
+				"dweb:/ipfs/QmRdYWsDp2dju21v12Ccss4weDYv8sZoaQinB7E3dRwfr1"
 			]
 		}
 	},
