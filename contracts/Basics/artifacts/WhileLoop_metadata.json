@@ -6,32 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "b",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "getData",
+				"name": "counter",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -40,6 +16,25 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "incrementCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -56,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Basics/Modifiers.sol": "MyContract"
+			"contracts/Basics/While.sol": "WhileLoop"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -70,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Basics/Modifiers.sol": {
-			"keccak256": "0x8a64f9ee14e5c5d1e5ac1c03c544674fe9d647fb00f2a6222f78e703638c48d7",
+		"contracts/Basics/While.sol": {
+			"keccak256": "0x83f79232b84c9df2e36e9271773cff6b1e8f71bb0a9357f6a06df5511212af70",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://21c61d353d8db19cdf582ba80277e12d90f127aac0b0a186d00b1f62c3f7609a",
-				"dweb:/ipfs/QmSuYpQ7pL1RQ1njhjpp8rqR9FpUNxZaTJwY1uA9XxQ4GN"
+				"bzz-raw://9ba5e06763d0c1d275d77d0a7e8ddf5d23953e0422c1fc5217cd224629f59e1a",
+				"dweb:/ipfs/Qma2kMwFsW2nKJjsTFXwQ9TPykA3Lmzyn8wMxCZWJkKKAd"
 			]
 		}
 	},

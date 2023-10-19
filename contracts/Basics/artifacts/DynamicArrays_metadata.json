@@ -9,29 +9,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "b",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
-				"outputs": [
-					{
-						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getData",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -40,6 +22,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dynamicLoop",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -56,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Basics/Modifiers.sol": "MyContract"
+			"contracts/Basics/DynamicArrays.sol": "DynamicArrays"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -70,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Basics/Modifiers.sol": {
-			"keccak256": "0x8a64f9ee14e5c5d1e5ac1c03c544674fe9d647fb00f2a6222f78e703638c48d7",
+		"contracts/Basics/DynamicArrays.sol": {
+			"keccak256": "0x50c177a737fa2ef3f28fba650cee1754d2ab1c8aec3ac2610e405c8dd4380fce",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://21c61d353d8db19cdf582ba80277e12d90f127aac0b0a186d00b1f62c3f7609a",
-				"dweb:/ipfs/QmSuYpQ7pL1RQ1njhjpp8rqR9FpUNxZaTJwY1uA9XxQ4GN"
+				"bzz-raw://f5b897987550aa4edc6aff8631db82b140207c480952c7819b61bb76a02340c6",
+				"dweb:/ipfs/Qmaqxd91wV5R1usYtYb4fR5Fxzr8SKtnGhdXaskH4Y7spZ"
 			]
 		}
 	},

@@ -9,29 +9,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "b",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
-				"outputs": [
-					{
-						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getData",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -56,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Basics/Modifiers.sol": "MyContract"
+			"contracts/Basics/DynamicArrays.sol": "MyArray"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -70,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Basics/Modifiers.sol": {
-			"keccak256": "0x8a64f9ee14e5c5d1e5ac1c03c544674fe9d647fb00f2a6222f78e703638c48d7",
+		"contracts/Basics/DynamicArrays.sol": {
+			"keccak256": "0xcfa70708032e95fcb24d69878e5a640eebcb869a7e242b0856ab7c56b0badff4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://21c61d353d8db19cdf582ba80277e12d90f127aac0b0a186d00b1f62c3f7609a",
-				"dweb:/ipfs/QmSuYpQ7pL1RQ1njhjpp8rqR9FpUNxZaTJwY1uA9XxQ4GN"
+				"bzz-raw://63c4d7d7b0e34ad5f824d22cd7b14f171462256c063c13deb3eb8210bb7638d1",
+				"dweb:/ipfs/QmShstZ3wiEFV1gMWYNdVKn21y2YbeXt2MAnpV6Fxkiv1S"
 			]
 		}
 	},
