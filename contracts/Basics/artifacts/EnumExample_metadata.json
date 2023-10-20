@@ -35,6 +35,13 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetSatatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -65,11 +72,11 @@
 	},
 	"sources": {
 		"contracts/Basics/Enum.sol": {
-			"keccak256": "0xcb6195258ef93c3bbadf1d527b5207fc0817f72d0b27ddb4e49c7e8939badc96",
+			"keccak256": "0xe7ea9b7461aab1bc104f25017f1085556efd1532f664831f938eadb2a5b401df",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ce8ad7a243d298c8e744711f1263538110147cdbb6e3c7be0b996ef5502f8687",
-				"dweb:/ipfs/QmcE9g9dzusQ8GjGDE46pvAwC6o9Sze288qFRjboj8ZB1J"
+				"bzz-raw://f1edf3b87b03905ba97aab9dd3be6a21b314b05e094b4dc064675eaaf75dcb40",
+				"dweb:/ipfs/QmZczhXuno3uagUk363SSkpCeabc1CbFS2KcmeoUDaAigi"
 			]
 		}
 	},

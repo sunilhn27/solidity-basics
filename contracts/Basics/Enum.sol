@@ -22,4 +22,11 @@ contract EnumExample {
     function changeStatus(Status newStatus) public {
         currentStatus = newStatus;
     }
+
+
+   //funciton to reset Status
+   function resetSatatus() public{
+     delete currentStatus;
+   }
+
 }
