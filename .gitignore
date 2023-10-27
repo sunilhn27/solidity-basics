@@ -12,7 +12,7 @@ node_modules/
 build/
 
 # Ignore compiled contract artifacts
-artifacts/
+artifacts/*
 
 # Ignore solc output
 *.sol.js
