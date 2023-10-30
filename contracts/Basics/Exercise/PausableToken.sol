@@ -1,47 +1,40 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.2;
+pragma solidity ^0.8.0;
 
+contract PausableToken {
+    address public owner;
+    bool public paused;
+    mapping(address => uint256) public balances;
 
+    constructor() {
+        owner = msg.sender;
+        paused = false;
+        balances[owner] = 1000;
+    }
 
-contract MyPausableToken{
-   address public owner;
-   bool public paused;
-   mapping(address =>uint) public balance;
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only owner can perform this action");
+        _;
+    }
 
-   constructor(){
-    owner =msg.sender;
-    paused =false;
-    balance[owner]=1000;
-   }
+    modifier notPaused() {
+        require(!paused, "Contract is paused");
+        _;
+    }
 
+    function pause() public onlyOwner {
+        paused = true;
+    }
 
-   modifier OnlyOwner(){
-    require(msg.sender==owner,"You are not the Owner"); 
-    _;
-   }
+    function unpause() public onlyOwner {
+        paused = false;
+    }
 
-   modifier notPaused(){
-    require(!paused,"Contract is paused"); 
-    _;
-   }
+    function transfer(address to, uint256 amount) public notPaused {
+        require(balances[msg.sender] >= amount, "Insufficient balance");
 
-   function pause() public view OnlyOwner{
-       paused ==true;   
-   }
-
-   function unPaused() public view OnlyOwner{
-    paused ==false;   
-
-   }
-
-   function transferMoney(address _to ,uint _amt) public notPaused{
-    require(balance[msg.sender]>= _amt,"Insufficient balance");
-    balance[msg.sender] -=_amt;
-    balance[_to]+=_amt;
-
-   }
-
-
-
+        balances[msg.sender] -= amount;
+        balances[to] += amount;
+    }
 }
