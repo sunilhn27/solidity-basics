@@ -9,15 +9,17 @@ contract Students {
 
     struct Student {
         string name;
-        uint256 rollNumber;
+        uint8 rollNumber;
         uint8 age;
         string gender;
     }
 
-    constructor(){
-        owner=msg.sender;
-    }
+    mapping(address => mapping(uint256 => Student)) rollNumberToStudent;
 
+
+    constructor(){
+        owner =msg.sender;
+    }
 
     modifier Onlyowner() {
         require(msg.sender == owner, "Only owner can add Students");
@@ -29,9 +31,15 @@ contract Students {
         stud[msg.sender].push(stu);
     } 
 
-    function getStudentByRollNumber(address _addr, uint256 _rollNumber) external view returns (Student memory){
-        return stud[_addr][_rollNumber];
+   function getStudentNameByRollNumber(address _addr, uint256 _rollNumber) external view returns (string memory) {
+    uint256 studentCount = stud[_addr].length;
+    for (uint256 i = 0; i < studentCount; i++) {
+        if (stud[_addr][i].rollNumber == _rollNumber) {
+            return stud[_addr][i].name;
+        } 
     }
+    return "student not found";
+   }
 
     function getAllStudents(address _adddress) external view returns (Student[] memory){
         return stud[_adddress];
