@@ -22,10 +22,7 @@ contract EmployeeContract {
         _;
     }
 
-    function CreateEmployee(string memory _name, uint16 _age)
-        external
-        OnlyOwner
-    {
+    function CreateEmployee(string memory _name, uint16 _age)external OnlyOwner{
         Employee memory emp1 = Employee(0, _name, _age);
         emp[msg.sender].push(emp1);
     }
