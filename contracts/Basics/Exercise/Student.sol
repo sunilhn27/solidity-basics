@@ -14,7 +14,7 @@ contract Students {
         string gender;
     }
 
-    mapping(address => mapping(uint256 => Student)) rollNumberToStudent;
+    mapping(address => mapping(uint256 => Student[])) rollNumberToStudent;
 
 
     constructor(){
