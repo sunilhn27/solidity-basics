@@ -22,8 +22,8 @@ contract EmployeeContract {
         _;
     }
 
-    function CreateEmployee(string memory _name, uint16 _age)external OnlyOwner{
-        Employee memory emp1 = Employee(0, _name, _age);
+    function CreateEmployee( uint16 _id, string memory _name, uint16 _age)external OnlyOwner{
+        Employee memory emp1 = Employee(_id, _name, _age);
         emp[msg.sender].push(emp1);
     }
 
@@ -35,5 +35,11 @@ contract EmployeeContract {
             }
         }
         return "Employee not found";
+    }
+
+
+
+    function getAllEmployee (address _address) external view returns(Employee[] memory){
+        return emp[_address];
     }
 }
