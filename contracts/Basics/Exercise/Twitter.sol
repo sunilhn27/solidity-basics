@@ -22,6 +22,7 @@ contract Twitter {
         _;
     }
 
+
     function createTweet(string memory _tweet) public {
         Tweet memory newTweet = Tweet({
             id: tweets[msg.sender].length,
@@ -41,7 +42,6 @@ contract Twitter {
         //require(tweets[author][id].id == id, "TWEET DOES NOT EXIST");
         tweets[author][id].likes++;
     }
-
     function unlikeTweet() external {}
 
     function getAllTweet(address _address) external view returns (Tweet[] memory){
