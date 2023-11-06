@@ -8,11 +8,11 @@ contract Fallback{
 
      event log(string name);
 
-    fallback() external payable { //receives ETH
+    fallback() external payable { //receives ETH and data
         emit log("fallback");
     }
 
-    receive() external payable { 
+    receive() external payable { //receives only ETH 
         emit log("receive");
     }
 
