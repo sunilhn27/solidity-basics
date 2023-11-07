@@ -21,6 +21,10 @@ contract Car is Vechicle {
     function getWheel() public pure override  returns (uint256) {
         return 4;
     }
+
+       function getcolor() public pure   returns (string memory) {
+        return "red";
+    }
 }
 
 contract Bus is Vechicle{
