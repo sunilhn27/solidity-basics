@@ -34,3 +34,12 @@ contract Bus is Vechicle{
 }
 
 
+contract Truck is Vechicle{
+
+    constructor() Vechicle("Truck"){}
+
+    function getWheel() public pure override returns (uint256) {
+        return 8;
+    }
+    
+}
