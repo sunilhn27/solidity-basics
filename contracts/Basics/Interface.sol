@@ -11,9 +11,15 @@ interface Repair {
 }
 
 contract Vechicle is Repair {
-    function repairCar() external returns (string memory) {}
+    function repairCar() external pure returns (string memory) {
+        return "Repair Car done";
+    }
 
-    function repairBus() external returns (string memory) {}
+    function repairBus() external pure returns (string memory) {
+        return "Repair Bus done";
+    }
 
-    function repairBike() external returns (string memory) {}
+    function repairBike() external pure returns (string memory) {
+        return "Repair Bike done";
+    }
 }
