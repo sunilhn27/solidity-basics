@@ -4,6 +4,7 @@
 *.bin
 *.dat
 *.swp
+*.ts
 
 # Ignore node_modules directory
 node_modules/
