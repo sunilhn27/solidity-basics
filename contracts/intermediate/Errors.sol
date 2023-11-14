@@ -5,6 +5,10 @@ pragma solidity ^0.8.2;
 contract Errors {
     address payable public owner;
 
+    constructor(address payable _add) {
+        owner = _add;
+    }
+
     error TransferNotOwner();
 
     function errorFunction() external view {
@@ -18,6 +22,6 @@ contract Errors {
     }
 
     function requireFunction() external view {
-        require(msg.sender != owner, "Sending is not Owner");
+        require(msg.sender == owner, "Sending is not Owner");
     }
 }
