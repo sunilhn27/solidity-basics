@@ -35,7 +35,7 @@ contract SendETH {
         // check result of send()，revert with error when failed
         bool success = _to.send(amount);
         if (!success) {
-            //revert SendFailed();
+            revert ("Failed send eth fun");
         }
     }
 
@@ -49,7 +49,7 @@ contract SendETH {
         // check result of call()，revert with error when failed
         (bool success, ) = _to.call{value: amount}("");
         if (!success) {
-            //    revert CallFailed();
+            revert ("Failed Call eth fun");
         }
     }
 
