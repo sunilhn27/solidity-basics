@@ -20,14 +20,14 @@ contract DataLocation{
 
     uint[] public x = [1,2,3]; // state variable: array x
 
-//When storage (a state variable of the contract) is assigned to the local storage (in a function), a reference will be created, and changing value of the new variable will affect the original one. Example:
+    //When storage (a state variable of the contract) is assigned to the local storage (in a function), a reference will be created, and changing value of the new variable will affect the original one. Example:
     function fStorage() public{
         //Declare a storage variable xStorage, pointing to x. Modifying xStorage will also affect x
         uint[] storage xStorage = x;
         xStorage[0] = 100;
     }
-//Assigning storage to memory creates independent copies, and changes to one will not affect the other; and vice versa. Example:
-
+ 
+    //Assigning storage to memory creates independent copies, and changes to one will not affect the other; and vice versa. Example:
     function fMemory() public view{
         //Declare a variable xMemory of Memory, copy x. Modifying xMemory will not affect x
         uint[] memory xMemory = x;
