@@ -27,3 +27,24 @@ contract OtherContract {
     }
 }
 
+contract CallingContract{
+
+   function callSetX(address _Address, uint256 x) external{
+        OtherContract(_Address).setX(x);
+    }
+
+    function callGetX(OtherContract _Address) external view returns(uint x){
+        x = _Address.getX();
+    }
+
+    function getBalanceForOtherContract(OtherContract _addr) external view returns(uint256 x){
+           x =_addr.getBalance();   
+    }
+
+     function callGetX2(address _Address) external view returns(uint x){
+        OtherContract oc = OtherContract(_Address);
+        x =oc.getX();
+    }
+
+}
+
