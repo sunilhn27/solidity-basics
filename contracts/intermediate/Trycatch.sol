@@ -3,6 +3,7 @@
 pragma solidity ^0.8.2;
 
 contract OnlyEven{
+    
     constructor(uint a){
         require(a != 0, "invalid number");
         assert(a != 1);
