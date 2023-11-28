@@ -13,6 +13,7 @@ contract Mapping{
           uint256 id;
           uint256 score;
       }
+      
 //      mapping(Student => uint) public testVar; throws compile time error
 
 //Rules of mapping
