@@ -34,6 +34,7 @@ contract Father is Grandfather{
     }
 }
 
+
 contract Son is Grandfather, Father{
     // Apply inheritance to the following 2 functions: hip() and pop()，then change the log value to "Son".
     function hip() public virtual override(Grandfather, Father){
