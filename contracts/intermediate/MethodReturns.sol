@@ -19,6 +19,7 @@ contract MethodReturns {
         //(, _bool, ) = returnNamed();
     }    
 
+
     function returnNamed2() public pure returns(uint256 _number){
         //bool _bool = true;
         //string memory _str = '0xAA';       
