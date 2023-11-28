@@ -22,6 +22,7 @@ contract OtherContract is IOtherContract{
         }
     }
 
+
     function getX() external view override returns(uint x){
         x = _x;
     }
